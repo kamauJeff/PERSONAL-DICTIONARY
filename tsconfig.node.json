@@ -4,7 +4,7 @@
     "target": "ES2023",
     "lib": ["ES2023"],
     "module": "ESNext",
-    "types": [],
+    "types": ["node"],        // add Node types so path/__dirname work
     "skipLibCheck": true,
 
     /* Bundler mode */
@@ -12,7 +12,10 @@
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
-    "noEmit": true,
+
+    /* Required for project references */
+    "composite": true,
+    "noEmit": false,
 
     /* Linting */
     "strict": true,
