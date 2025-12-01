@@ -5,13 +5,11 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
-    "baseUrl": ".",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/": ["./src/"]
     }
-  },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+  }
 }
